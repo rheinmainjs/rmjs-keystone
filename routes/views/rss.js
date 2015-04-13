@@ -40,7 +40,6 @@ exports = module.exports = function(req, res) {
 			locals.data.posts = results;
 			//for (item in results.results) {
 			results.results.forEach(function (item) {
-				console.log(item);
 				feed.item({
 					'title': item.title,
 					'description': item.content.extended,

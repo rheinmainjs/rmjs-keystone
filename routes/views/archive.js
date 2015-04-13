@@ -30,7 +30,6 @@ exports = module.exports = function(req, res) {
 
 		q.exec(function(err, events) {
 			locals.data.events = events;
-			//console.log(events.results);
 			locals.data.events.results.forEach(function (event) {
 				locals.data.eventIds.push(event.id);
 			});

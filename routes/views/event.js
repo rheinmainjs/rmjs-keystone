@@ -38,7 +38,6 @@ exports = module.exports = function(req, res) {
 			.populate('who');
 
 		q.exec(function(err, result) {
-			console.log(result);
 			locals.data.talks = result;
 			next(err);
 		});
