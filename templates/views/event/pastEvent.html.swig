@@ -17,6 +17,7 @@
 				{% for speaker in talk.who %}
 					<a href="{{ speaker.website }}">{{ speaker.name.first }} {{ speaker.name.last }}</a>
 				{% endfor %}
+                {% if talk.slides %} (<a href="{{ talk.slides }}"><i class="fa fa-external-link" style="width: 1.2em;"></i>Slides</a>) {% endif %}
 			</li>
 			{% endif %}
 			{% endfor %}
